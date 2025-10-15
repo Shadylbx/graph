@@ -2,7 +2,7 @@
 CREATE CONSTRAINT unique_node IF NOT EXISTS FOR (n:Node) REQUIRE n.id IS UNIQUE;
 
 // --- Load Nodes ---
-LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/<your_repo>/main/neo4j_nodes_internal.csv' AS row
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/Shadylbx/graph/refs/heads/main/neo4j_nodes_internal.csv' AS row
 CREATE (n:Node {
   id: row[":ID"],
   name: row.name,
@@ -28,7 +28,7 @@ MATCH (n:Node)
 WHERE n.status = 'Orphan' SET n:Orphan;
 
 // --- Load Relationships ---
-LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/<your_repo>/main/neo4j_edges_internal.csv' AS row
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/Shadylbx/graph/main/neo4j_edges_internal.csv' AS row
 MATCH (a:Node {id: row[":START_ID"]}), (b:Node {id: row[":END_ID"]})
 CREATE (a)-[:RELATION {
   type: row[":TYPE"],
