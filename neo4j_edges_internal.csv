@@ -1,0 +1,16 @@
+:START_ID,:END_ID,:TYPE,relation_label
+MSP001,POL001,SUPPORTS,Master contains Policy
+MSP001,POL002,SUPPORTS,Master contains Policy
+MSP001,POL003,REFERENCES,External reference
+MSP001,POL004,REFERENCES,External reference
+POL001,ST001,DEFINED_BY,Policy defined by Standard
+POL001,ST002,DEFINED_BY,Policy defined by Standard
+POL001,ST003,DEFINED_BY,Policy defined by Standard
+POL001,ST004,DEFINED_BY,Policy defined by Standard
+POL001,ST005,DEFINED_BY,Policy defined by Standard
+ST003,SP001,HAS_SPEC,Standard supported by Specification
+ST003,PR001,HAS_PROC,Standard supported by Procedure
+ST002,PR002,HAS_PROC,Standard supported by Procedure
+ST007,PR003,HAS_PROC,Standard supported by Procedure
+POL002,ST002,DEFINED_BY,Acceptable Use links to Password Standard
+POL001,PR004,ORPHAN_PROC,Unlinked Procedure

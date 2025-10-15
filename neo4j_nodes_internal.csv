@@ -1,0 +1,18 @@
+:ID,name,type,status,color,:LABEL
+MSP001,Master Information Security Policy,Master Policy,Active,blue,Policy
+POL001,Information Security Policy,Policy,Active,green,Policy
+POL002,Acceptable Use Policy,Policy,Active,green,Policy
+POL003,PCI Policy,External Policy,Active,gray,Policy
+POL004,Records Management Policy,External Policy,Active,gray,Policy
+ST001,Security Governance Standard,Standard,Active,orange,Standard
+ST002,Password Standard,Standard,Active,orange,Standard
+ST003,Vulnerability and Patch Management Standard,Standard,Active,orange,Standard
+ST004,Third-Party Vendor Management Standard,Standard,Active,orange,Standard
+ST005,Web Application Security Standard,Standard,Active,orange,Standard
+ST006,Email Security Standard,Standard,Active,orange,Standard
+ST007,Business Continuity & Disaster Recovery Standard,Standard,Active,orange,Standard
+SP001,Minimum Security Baseline,Specification,Active,yellow,Specification
+PR001,Change Control Procedure,Procedure,Active,purple,Procedure
+PR002,IT Physical Inventory Procedure,Procedure,Active,purple,Procedure
+PR003,Incident Reporting Procedure,Procedure,Active,purple,Procedure
+PR004,AI Procedure,Procedure,Orphan,red,Procedure
